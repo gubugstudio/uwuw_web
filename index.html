@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Uwuw Pets — halaman informasi, galeri, dan kontak webmaster.">
+  <meta name="theme-color" content="#f5a623">
+  <title>Uwuw Pets</title>
+  <link rel="icon" href="favicon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Uwuw Pets">
+      <span class="brand-icon" aria-hidden="true">🐾</span>
+      <span>UWUW PETS</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Uwuw Pets">
+      <img src="assets/hero.png" alt="Ilustrasi hewan-hewan lucu di halaman Uwuw Pets">
+      <div class="hero-overlay">
+        <p class="hero-kicker">Teman kecil, cerita besar</p>
+        <h1>Selamat datang di Uwuw Pets</h1>
+        <p>Ruang kecil untuk berbagi cerita, foto, dan momen bersama hewan kesayangan.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="galeri">
+      <div class="section-heading">
+        <span class="eyebrow">GALERI</span>
+        <h2>Foto-foto Uwuw Pets</h2>
+        <p>Bagian ini dibuat memanjang dengan 2 kolom. Tambahkan atau ganti foto di folder <code>assets</code>.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card"><img src="assets/gallery-01.svg" alt="Foto galeri 01" loading="lazy"><figcaption>Foto 01</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-02.svg" alt="Foto galeri 02" loading="lazy"><figcaption>Foto 02</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-03.svg" alt="Foto galeri 03" loading="lazy"><figcaption>Foto 03</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-04.svg" alt="Foto galeri 04" loading="lazy"><figcaption>Foto 04</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-05.svg" alt="Foto galeri 05" loading="lazy"><figcaption>Foto 05</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-06.svg" alt="Foto galeri 06" loading="lazy"><figcaption>Foto 06</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-07.svg" alt="Foto galeri 07" loading="lazy"><figcaption>Foto 07</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-08.svg" alt="Foto galeri 08" loading="lazy"><figcaption>Foto 08</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-09.svg" alt="Foto galeri 09" loading="lazy"><figcaption>Foto 09</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-10.svg" alt="Foto galeri 10" loading="lazy"><figcaption>Foto 10</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-11.svg" alt="Foto galeri 11" loading="lazy"><figcaption>Foto 11</figcaption></figure>
+        <figure class="gallery-card"><img src="assets/gallery-12.svg" alt="Foto galeri 12" loading="lazy"><figcaption>Foto 12</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="contact-section" id="webmaster">
+      <div class="contact-copy">
+        <span class="eyebrow">KONTAK</span>
+        <h2>Kirim pesan kepada webmaster</h2>
+        <p>Form ini bekerja tanpa server: ketika dikirim, aplikasi email pengunjung akan dibuka. Ganti alamat webmaster pada <code>script.js</code>.</p>
+      </div>
+
+      <form id="webmaster-form" class="contact-form">
+        <label>
+          Nama
+          <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </label>
+        <label class="full">
+          Pesan
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+        </label>
+        <button type="submit">Kirim Pesan ✉</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-icon" aria-hidden="true">🐾</span>
+      <strong>UWUW PETS</strong>
+      <small>Berbagi cerita dan momen bersama hewan kesayangan.</small>
+    </div>
+
+    <div class="social-links" aria-label="Media sosial">
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+    </div>
+
+    <div class="copyright">© <span id="year"></span> Uwuw Pets. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
