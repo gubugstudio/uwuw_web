@@ -108,6 +108,16 @@ a {
   z-index: 10;
 }
 
+body.is-desktop .hero {
+  position: relative;
+  top: auto;
+  z-index: 1;
+}
+
+body.is-desktop .sapa {
+  margin-top: 0;
+}
+
 .hero>img {
   width: 100%;
   height: 100%;

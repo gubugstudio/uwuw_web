@@ -6,6 +6,15 @@ const WEBMASTER_EMAIL = "uwuw@rekalaya.my.id";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
+
+function updateDeviceLayout(event) {
+  document.body.classList.toggle("is-desktop", event.matches);
+}
+
+updateDeviceLayout(desktopMediaQuery);
+desktopMediaQuery.addEventListener("change", updateDeviceLayout);
+
 const form = document.getElementById("webmaster-form");
 const status = document.getElementById("form-status");
 
