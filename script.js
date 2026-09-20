@@ -1,7 +1,19 @@
-// =============================
-// KONFIGURASI SEDERHANA
-// =============================
-// Ganti alamat di bawah dengan email webmaster Anda.
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const adsTxtContent = `google.com, pub-8602992623714384, DIRECT, f08c47fec0942fa0`; 
+
+  return new Response(adsTxtContent, {
+    headers: { 
+      'content-type': 'text/plain; charset=utf-8',
+      'access-control-allow-origin': '*'
+    },
+  })
+}
+
+
 const WEBMASTER_EMAIL = "uwuw@rekalaya.my.id";
 
 document.getElementById("year").textContent = new Date().getFullYear();
